@@ -33,11 +33,20 @@ fun task4(events: List<Event>) {
     println("You have ${shortEvents.size} short events.")
 }
 
-
-
+//Задача 5
+fun task5(events: List<Event>) {
+    val groupedEvents = events.groupBy { it.dayPart }
+    groupedEvents.forEach { (dayPart, events) ->
+        println("$dayPart: ${events.size} events")
+    }
+}
 
 fun main(){
     val events = task3()
     task4(events)
+    task5(events)
+
+
+
 
 }
