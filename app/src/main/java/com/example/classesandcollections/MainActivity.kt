@@ -41,12 +41,15 @@ fun task5(events: List<Event>) {
     }
 }
 
+//Задача 6
+fun task6(events: List<Event>) {
+    println("Last event of the day: ${events.last().title}")
+}
+
 fun main(){
     val events = task3()
     task4(events)
     task5(events)
-
-
-
+    task6(events)
 
 }
