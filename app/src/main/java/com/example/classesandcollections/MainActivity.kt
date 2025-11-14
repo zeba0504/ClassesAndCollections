@@ -27,7 +27,17 @@ fun task3(): List<Event> {
     return events
 }
 
-fun main(){
+//Задача 4
+fun task4(events: List<Event>) {
+    val shortEvents = events.filter { it.durationInMinutes < 60 }
+    println("You have ${shortEvents.size} short events.")
+}
 
+
+
+
+fun main(){
+    val events = task3()
+    task4(events)
 
 }
